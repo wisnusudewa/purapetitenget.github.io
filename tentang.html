@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tentang| Virtual Tour 360 Pura Petitenget!</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/app.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <!-- button up -->
+    <button id="awalBtn" class="btn btn-primary" style="position: fixed;z-index: 2000;bottom: 16px;right: 16px;"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- menu bar -->
+    <app-menu></app-menu>
+
+    <!-- corousel -->
+    <app-corousel></app-corousel>
+
+    <!-- content -->
+    <div class="container">
+      <h2 class="mt-3 text-center">TENTANG</h2>
+      <hr>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card mb-4">
+            <img src="./images/tentang/1.penulis.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Pengembang Aplikasi</h5>
+              <p class="card-text text-center">Wisnu Nanda Putra Sudewa</p>
+              <h3 class="text-center">
+                <a href="https://www.instagram.com/wisnu_sudewa90/" style="color: #0e0003bb; padding: 0 2px;"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.facebook.com/wisnu.nanda.54/" style="color: #0034c3; padding: 0 2px;"><i class="fab fa-facebook-square"></i></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card mb-4">
+            <img src="./images/tentang/2.pengelola pura.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Sekretaris Pura Petitenget</h5>
+              <p class="card-text text-center">I Made Sudiana,SH</p>
+              <h3 class="text-center">
+                <!-- <a href="#" style="color: #0e0003bb; padding: 0 2px;"><i class="fab fa-instagram-square"></i></a> -->
+                <a href="https://www.facebook.com/profile.php?id=100004857075913" style="color: #0034c3; padding: 0 2px;"><i class="fab fa-facebook-square"></i></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card mb-4">
+            <img src="./images/tentang/3.pakpadma.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Pembimbing 1 </h5>
+              <p class="card-text text-center">Padma Nyoman Crisnapati, S.Kom, M.Pd, M.Kom</p>
+              <h3 class="text-center">
+                <a href="https://www.instagram.com/crisnapati/" style="color: #0e0003bb; padding: 0 2px;"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.facebook.com/crisnapati" style="color: #0034c3; padding: 0 2px;"><i class="fab fa-facebook-square"></i></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card mb-4">
+            <img src="./images/tentang/4.bukrosa.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Pembimbing 2 </h5>
+              <p class="card-text text-center">Rosalia Hadi, S.Kom., M.T</p>
+              <h3 class="text-center">
+                <a href="https://www.instagram.com/rosalialiahd/" style="color: #0e0003bb; padding: 0 2px;"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.facebook.com/rosalia.hadi" style="color: #0034c3; padding: 0 2px;"><i class="fab fa-facebook-square"></i></a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <app-footer></app-footer>
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+    <script type="module">
+      import './components/app-menu.js';
+      import './components/app-footer.js';
+      import './components/app-corousel.js';
+
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log(document);
+
+        // activating menu
+        document.querySelector('#menuTentang').classList.add('active');
+        
+      });
+    
+      awalBtn.addEventListener('click', () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0
+      })
+      
+   </script>
+  </body>
+</html>
